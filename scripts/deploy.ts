@@ -42,7 +42,7 @@ async function verify(contractAddress: string, args: any[]) {
     });
 
     console.log("Contract verified!");
-  } catch (error) {
+  } catch (error: any) {
     console.error(error);
   }
 }
