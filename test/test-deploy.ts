@@ -28,4 +28,14 @@ describe("SimpleStorage", function () {
 
     assert.equal(favoriteNumber.toString(), newValue);
   });
+
+  it("Should be able to add a person to the arr", async function () {
+    const favoriteNumber = "12";
+    const name = "Luke";
+    await simpleStorage.addPerson(name, favoriteNumber);
+    const person = await simpleStorage.people("0");
+    console.log("person", person);
+    assert.equal(person.favoriteNumber.toString(), favoriteNumber);
+    assert.equal(person.name, name);
+  });
 });

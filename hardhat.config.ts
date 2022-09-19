@@ -3,6 +3,7 @@ import "@nomicfoundation/hardhat-toolbox";
 import "dotenv/config";
 import "hardhat-gas-reporter";
 import "./tasks/block-number";
+import "solidity-coverage";
 
 const ALCHEMY_GOERLI_URL = process.env.ALCHEMY_GOERLI_URL || "";
 const ALCHEMY_PRIVATE_KEY = process.env.ALCHEMY_PRIVATE_KEY || "";
