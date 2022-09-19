@@ -5,6 +5,7 @@ import "hardhat-gas-reporter";
 import "./tasks/block-number";
 import "solidity-coverage";
 import "@nomiclabs/hardhat-ethers";
+import "@typechain/hardhat";
 
 const ALCHEMY_GOERLI_URL = process.env.ALCHEMY_GOERLI_URL || "";
 const ALCHEMY_PRIVATE_KEY = process.env.ALCHEMY_PRIVATE_KEY || "";
