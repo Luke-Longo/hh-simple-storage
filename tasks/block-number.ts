@@ -6,5 +6,4 @@ export default task(
 ).setAction(async (taskArgs, hre) => {
   const blockNumber = await hre.ethers.provider.getBlockNumber();
   console.log(`Block Number: ${blockNumber}`);
-  console.log(`Block Number: ${blockNumber}`);
 });
